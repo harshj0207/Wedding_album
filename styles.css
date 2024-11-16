@@ -1,0 +1,99 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff8e1; /* Light beige */
+    color: #6a1b9a; /* Royal purple */
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #ffd54f; /* Golden Yellow */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #bf360c; /* Traditional Maroon */
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.upload-container {
+    background-color: #fbe9e7; /* Light Peach */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #bf360c; /* Maroon border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+.upload-container h2 {
+    font-size: 1.8rem;
+    color: #d84315; /* Deep Orange */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #6a1b9a; /* Royal purple */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #d84315;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6a1b9a; /* Royal purple */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4a0072; /* Dark purple */
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ffd54f;
+    border-radius: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #bf360c;
+}

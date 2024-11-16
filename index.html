@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Photo Upload</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>📸 Meet & Subhi's Wedding Memories</h1>
+        <p>Welcome! Please upload your photos and videos.</p>
+    </header>
+
+    <main>
+        <div class="upload-container">
+            <h2>Upload Your Photos/Videos</h2>
+            <form id="uploadForm" onsubmit="handleFileUpload(event)">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="fileInput">Select Files to Upload:</label>
+                <input type="file" id="fileInput" name="files" multiple required>
+
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+
+        <!-- Error Message Container -->
+        <div id="errorContainer" style="color: red; margin-top: 10px;"></div>
+
+        <!-- Loading Spinner -->
+        <div id="loading" style="display: none; margin-top: 10px;">Uploading...</div>
+
+        <!-- Display Uploaded Files -->
+        <div id="uploadedFiles" style="margin-top: 20px;"></div>
+    </main>
+
+    <footer>
+        <p>With love from Meet & Subhi ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
